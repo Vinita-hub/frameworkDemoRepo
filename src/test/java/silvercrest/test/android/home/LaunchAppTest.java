@@ -6,7 +6,7 @@ import com.silvercrest.android.comonlib.BaseClass;
 
 /**
  * 
- * @author Admin
+ * @author vinita
  *
  */
 public class LaunchAppTest extends BaseClass{
