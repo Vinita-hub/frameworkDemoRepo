@@ -7,6 +7,11 @@ import java.util.Properties;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import io.appium.java_client.android.AndroidDriver;
 
 /**
@@ -74,4 +79,8 @@ public class BaseClass implements IConstants {
 		} catch (Exception e) {
 		}
 	}
+	public static ExtentReports extentReports;
+	public static ExtentTest extentTest;
+	public static ExtentHtmlReporter extentHtmlReporter;
+	public String testCaseName;
 }
